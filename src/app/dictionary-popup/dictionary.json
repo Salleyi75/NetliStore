@@ -1,0 +1,165 @@
+{
+
+
+
+  "drug-resistant": {
+    "entries": [
+        {
+            "entry": "resistant",
+            "interpretations": [
+                {
+                    "lemma": "resistant",
+                    "normalizedLemmas": [
+                        {
+                            "lemma": "resistant"
+                        }
+                    ],
+                    "partOfSpeech": "noun",
+                    "grammar": [
+                        {
+                            "number": [
+                                "singular"
+                            ],
+                            "case": [
+                                "nominative"
+                            ]
+                        }
+                    ],
+                    "morphemes": [
+                        {
+                            "entry": "resist",
+                            "type": "root"
+                        },
+                        {
+                            "entry": "-ant",
+                            "type": "suffix"
+                        }
+                    ]
+                },
+                {
+                    "lemma": "resistant",
+                    "normalizedLemmas": [
+                        {
+                            "lemma": "resistant"
+                        }
+                    ],
+                    "partOfSpeech": "adjective",
+                    "grammar": [
+                        {
+                            "degree": [
+                                "positive"
+                            ]
+                        }
+                    ],
+                    "morphemes": [
+                        {
+                            "entry": "resist",
+                            "type": "root"
+                        },
+                        {
+                            "entry": "-ant",
+                            "type": "suffix"
+                        }
+                    ]
+                }
+            ],
+            "lexemes": [
+                {
+                    "lemma": "resistant",
+                    "partOfSpeech": "noun",
+                    "senses": [
+                        {
+                            "definition": "A person who resists; especially a member of a resistance movement.",
+                            "labels": [
+                                "countable"
+                            ]
+                        },
+                        {
+                            "definition": "A thing which resists.",
+                            "labels": [
+                                "countable"
+                            ]
+                        }
+                    ],
+                    "forms": [
+                        {
+                            "form": "resistants",
+                            "grammar": [
+                                {
+                                    "number": [
+                                        "plural"
+                                    ],
+                                    "case": [
+                                        "nominative"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "lemma": "resistant",
+                    "partOfSpeech": "adjective",
+                    "senses": [
+                        {
+                            "definition": "Which makes resistance or offers opposition.",
+                            "labels": [
+                                "comparable"
+                            ]
+                        },
+                        {
+                            "definition": "Which is not affected or overcome by a disease, drug, chemical or atmospheric agent, extreme of temperature, etc.",
+                            "labels": [
+                                "comparable"
+                            ],
+                            "usageExamples": [
+                                "The infection is resistant to antibiotics."
+                            ]
+                        },
+                        {
+                            "definition": "Not greatly influenced by individual members of a sample.",
+                            "labels": [
+                                "comparable"
+                            ],
+                            "context": {
+                                "domains": [
+                                    "mathematics"
+                                ]
+                            }
+                        }
+                    ],
+                    "forms": [
+                        {
+                            "form": "more resistant",
+                            "grammar": [
+                                {
+                                    "degree": [
+                                        "comparative"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "form": "most resistant",
+                            "grammar": [
+                                {
+                                    "degree": [
+                                        "superlative"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "license": {
+                "name": "CC BY-SA 3.0",
+                "url": "https://creativecommons.org/licenses/by-sa/3.0"
+            },
+            "sourceUrls": [
+                "https://en.wiktionary.org/wiki/resistant"
+            ]
+        }
+    ]
+}
+}
