@@ -8,6 +8,9 @@ Activate the virtual Environment
 Install Required Modules
 -     pip install selenium
 -     pip install jupyter  # This will make python interactive, not required
+-     pip install lxml
+-     pip install vosk
+-     pip install wave
 
 Type Ctrl+Shift+P , type "python intepreter" select your venv/script/python.exe
 

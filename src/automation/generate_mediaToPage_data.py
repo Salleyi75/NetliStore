@@ -5,7 +5,7 @@ from lxml import html
 #from html.parser import HTMLParser
 
 page_number = 7
-folderpath = r"C:/Users/Mubarak Salley/Documents\Accede/Tenacity-Book-11/src/assets/pagesBeforeAudioAndVideo"
+folderpath = r"C:\Users\Pc\Music\WorkSpace\Tenacity-Book12\src\assets\pagesBeforeAudioAndVideo"
 #filepath = fr"C:\Users\Mubarak Salley\Documents\Accede\Tenacity-Book-11\src\assets\pages\{page_number}.html"
 
 html_file_names = glob.glob(folderpath + "/*.html" )
@@ -76,12 +76,13 @@ import glob, os, re
 import Levenshtein as lvsh
 
 # MANUAL INPUT
-AUDIO_FOLDER_PATH = r"C:\Users\Mubarak Salley\Documents\Accede\Tenacity-Book-11\src\assets\audio"
-PVIDEO_FOLDER_PATH = r"C:\Users\Mubarak Salley\Documents\Accede\Tenacity-Book-11\src\assets\video"
-PAGE_FOLDER_PATH = r"C:\Users\Mubarak Salley\Documents\Accede\Tenacity-Book-11\src\assets\pages"
+AUDIO_FOLDER_PATH = r"C:\Users\Pc\Music\WorkSpace\Tenacity-Book12\src\assets\audio"
+PVIDEO_FOLDER_PATH = r"C:\Users\Pc\Music\WorkSpace\Tenacity-Book12\src\assets\video"
+PAGE_FOLDER_PATH = r"C:\Users\Pc\Music\WorkSpace\Tenacity-Book12\src\assets\pages"
+
 
 # This Variable will be used By another python file wich imports this out
-GENERATED_PAGES_OUTPUT = r"C:\Users\Mubarak Salley\Documents\Accede\Tenacity-Book-11\src\assets\gpages"
+GENERATED_PAGES_OUTPUT = r"C:\Users\Pc\Music\WorkSpace\Tenacity-Book12\src\assets\gpages"
 
 #WORDS that dont help with fuzzy text matching
 WORDS_TO_REMOVE_FROM_VIDEO_NAME = ["Increaseyourwordpower","LearningStrategies","Vocabulary", "StudySkills", "LanguageFocus", "Listening", "Reading", "Speaking" , "Writing", "_"]
@@ -114,18 +115,18 @@ end_page_number = page_numbers[-1]
 unit_pagesm = {
     # Note these page number are actual page number on the page, but to get
     # the page you might have to add some offset value
-    "u-1"  : (1,28),
-    "u-2"  : (29,57),
-    "u-3"  : (57,90),
-    "u-4"  : (97,119),
-    "u-5"  : (120,140),
-    "u-6"  : (141,160),
-    "u-7"  : (167, 196),
-    "u-8"  : (197,220),
-    "u-9"  : (221,241),
-    "u-10" : (248,265),
-    "u-11" : (266,286),
-    "u-12" : (287,300)
+    "u-1"  : (1,29),
+    "u-2"  : (30,52),
+    "u-3"  : (53,73),
+    "u-4"  : (81,102),
+    "u-5"  : (103,124),
+    "u-6"  : (125,146),
+    "u-7"  : (153, 172),
+    "u-8"  : (173,194),
+    "u-9"  : (195,213),
+    "u-10" : (221,243),
+    "u-11" : (244,264),
+    "u-12" : (265,275)
 }
 
 unit_tized_videonames = dict()

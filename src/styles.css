@@ -10,7 +10,8 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 html.h5p-iframe{
-  overflow:hidden;
+  /* overflow:hidden; */
+  overflow:auto;
 }
 
 div.framediv::after{

@@ -84,10 +84,11 @@ import glob, math, wave, os, json
 from vosk import KaldiRecognizer, Model, SetLogLevel
 
 #SET UP VOICE RECOGNIZER
-model = Model(r"C:\Users\Mubarak Salley\Downloads\vosk-model-en-us-0.22\vosk-model-en-us-0.22")
+model = Model(r"C:\Users\Pc\Downloads\vosk-model-en-us-0.22\vosk-model-en-us-0.22")
+# model = Model(r"C:\Users\Mubarak Salley\Downloads\vosk-model-en-us-0.22\vosk-model-en-us-0.22")
 SetLogLevel(1)
 
-AUDIO_BASE_PATH = r'C:\Users\Mubarak Salley\Documents\Accede\Tenacity-Book-11\src\assets\audio'
+AUDIO_BASE_PATH = r'C:\Users\Pc\Music\WorkSpace\Tenacity-Book12\src\assets\audio'
 audioPathList = glob.glob(AUDIO_BASE_PATH + "\*.mp3")
 
 # %%

@@ -409,20 +409,20 @@ insertContent(rootElement, items);
 #%%
 options = Options()
 options.binary_location = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
-driver = webdriver.Chrome(executable_path=r'.\chromedriver.exe', options=options,desired_capabilities=d)
+#driver = webdriver.Chrome(executable_path=r'.\chromedriver.exe', options=options,desired_capabilities=d)
 
 
 
 # %%
-driver.close()
+#driver.close()
 
 # %%
 #driver.implicitly_wait()
-driver.get('http://localhost:4200/?page=8')
+#driver.get('http://localhost:4200/?page=8')
 # %%
 #parser = lxml.etree.HTMLParser()
 
-html = driver.execute_script("return document.documentElement.outerHTML")
+#html = driver.execute_script("return document.documentElement.outerHTML")
 #tree = lxml.etree.parse(StringIO(html), parser)
 
 #print(tree)
@@ -445,7 +445,7 @@ from lxml import html
 #from html.parser import HTMLParser
 
 page_number = 7
-folderpath = r"C:/Users/Mubarak Salley/Documents\Accede/Tenacity-Book-11/src/assets/pagesBeforeAudioAndVideo"
+folderpath = r"C:\Users\Pc\Music\WorkSpace\Tenacity-Book12\src\assets\pagesBeforeAudioAndVideo"
 #filepath = fr"C:\Users\Mubarak Salley\Documents\Accede\Tenacity-Book-11\src\assets\pages\{page_number}.html"
 
 html_file_names = glob.glob(folderpath + "/*.html" )
@@ -523,68 +523,68 @@ print(ids_list)
 # %%
 # Get Console.Log Stuff
 
-driver.refresh()
-WebDriverWait(driver=driver, timeout=10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+# driver.refresh()
+# WebDriverWait(driver=driver, timeout=10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
 
-# %%
-#driver.execute_script( r'console.log("SUCKER")')
+# # %%
+# #driver.execute_script( r'console.log("SUCKER")')
 
-# %%
-#time.sleep(1)
-driver.execute_script( """
-function setPage(id) {
-  page = "#" + id;
-  pageDiv = $(page);
-  pageDiv.contextmenu(function (e) {
-    e.preventDefault();
-    const guide = $(document.createElement("div"))
-      .css({
-        position: "absolute",
-        width: "100%",
-        height: 5,
-        background: "red",
-        top: 300,
-      })
-      .prop("id", "guide");
+# # %%
+# #time.sleep(1)
+# driver.execute_script( """
+# function setPage(id) {
+#   page = "#" + id;
+#   pageDiv = $(page);
+#   pageDiv.contextmenu(function (e) {
+#     e.preventDefault();
+#     const guide = $(document.createElement("div"))
+#       .css({
+#         position: "absolute",
+#         width: "100%",
+#         height: 5,
+#         background: "red",
+#         top: 300,
+#       })
+#       .prop("id", "guide");
 
-    pageDiv.append(guide);
+#     pageDiv.append(guide);
 
-    pageDiv.on({
-      mousemove: function (event) {
-        guide.css({ top: event.offsetY });
-      },
-      click: function () {
-        console.log("Position:", guide.css("top"));
-        pageDiv.off("click mousemove");
-      },
-    });
-  });
-};
+#     pageDiv.on({
+#       mousemove: function (event) {
+#         guide.css({ top: event.offsetY });
+#       },
+#       click: function () {
+#         console.log("Position:", guide.css("top"));
+#         pageDiv.off("click mousemove");
+#       },
+#     });
+#   });
+# };
 
-setPage("pf8")
-""")
+# setPage("pf8")
+# """)
 
-time.sleep(0.2)
+# time.sleep(0.2)
 
-# %%
-for entry in driver.get_log('browser'):
+# # %%
+# for entry in driver.get_log('browser'):
 
-    print("console: ",entry)
+#     print("console: ",entry)
 
-# %%
-print("console.log(\"SUCKER\")")
+# # %%
+# print("console.log(\"SUCKER\")")
 
-# %%
-ress = driver.get_screenshot_as_png()
+# # %%
+# ress = driver.get_screenshot_as_png()
 
-# %%
-driver.get_screenshot_as_file("last.png")
+# # %%
+# driver.get_screenshot_as_file("last.png")
 
-# %%
-element = driver.find_element(by=By.ID, value="pf8")
-print(element)
-# %%
-element.screenshot("pageimage.png")
+# # %%
+# element = driver.find_element(by=By.ID, value="pf8")
+# print(element)
+# # %%
+# element.screenshot("pageimage.png")
 # %%
 import tkinter as tk
 import threading, generate_mediaToPage_data, test_vosk, re, audio_to_text
@@ -832,7 +832,9 @@ class PageOne(tk.Frame):
         ## INIT BROWSER
         options = Options()
         options.binary_location = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
-        self.driver = webdriver.Chrome(executable_path=r'.\chromedriver.exe', options=options,desired_capabilities=d)
+        self.driver = webdriver.Chrome()#executable_path=r'.\chromedriver.exe', 
+                                       #options=options,desired_capabilities=d
+                                       #)
 
         # self.driver.get(self.get_urlstring(self._pagenum))
         # self.
