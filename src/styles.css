@@ -37,6 +37,9 @@ div.framediv.green::after{
 div.framediv.yellow::after{
   background:#E59F0A;
 }
+div.framediv.red::after{
+  background:#D41042;
+}
 
 div.framediv.topzero::after{
   top:0em;
