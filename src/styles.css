@@ -32,7 +32,10 @@ div.framediv::after{
 }
 
 div.framediv.green::after{
-  background: #0a8137
+  background: #0a8137;
+}
+div.framediv.yellow::after{
+  background:#E59F0A;
 }
 
 div.framediv.topzero::after{
