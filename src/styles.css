@@ -43,6 +43,12 @@ div.framediv.red::after{
 div.framediv.blue::after{
   background:#1476C6;
 }
+div.framediv.revcol::after{
+  background:#15909C;
+}
+div.framediv.shiftIn::after{
+  left: 7em;
+}
 
 div.framediv.topzero::after{
   top:0em;
