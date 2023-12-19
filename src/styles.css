@@ -40,6 +40,9 @@ div.framediv.yellow::after{
 div.framediv.red::after{
   background:#D41042;
 }
+div.framediv.blue::after{
+  background:#1476C6;
+}
 
 div.framediv.topzero::after{
   top:0em;
