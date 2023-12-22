@@ -1,8 +1,8 @@
 const fs = require("fs/promises");
 const path = require("path");
 const pagesDir = String.raw`C:\Users\Pc\Music\WorkSpace\Tenacity-Book12\src\assets\pages`;
-//const units = [[7, 34], [35, 63], [63, 96], [103, 125], [126, 146], [147, 166], [173, 202], [203, 226], [227, 247], [254, 271], [272, 292], [293, 306]];
-const units = [[319, 320]];
+// const units = [[7, 35], [36, 58], [59, 79], [87, 108], [109, 130], [131, 153], [159, 178], [179, 200], [201, 219], [227, 249], [250, 270], [271, 281]];
+const units = [[303, 304]];
 const wordsGrouped = require("./words_grouped.json");
 //const wordsGrouped = require("./words_grouped_nestedfix.json");
 
