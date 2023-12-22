@@ -7,29 +7,36 @@ const axios = require("axios").default.create({
   }
 });
 
-const words = ["observer"
-,"education"
-,"bachelor's degree"
-,"bimonthly"
-,"cut"
-,"resistant"
-, "noninfectious"
-, "snakebite"
-, "stomachache"
-, "X-ray"
-, "confined"
-, "campsite"
-, "ecolodge"
-, "Buddhist"
-, "apply"
-, "get down"
-, "get off"
-, "peal"
-, "deculturize"
-, "destructive"
-, "radio"
+const words = [
+  // "fine",
+  // "postage stamp",
+  "cast my gaze",
+  "on the other hand",
+  "communications-satellite",
+  "middle-income",
+  "customer relations",
+  "eye for detail",
+  "low income",
+  "self motivator",
+  // "tonne",
+  // "multitasker",
+  // "onstream",
+  // "problemsolver",
+  // "team player",
+  "drug dependency",
+  "drug dependent",
+  "move away from",
+  "made up of",
+  "cue",
+  // "stay up",
+  // "super",
+  // "volcano",
+  // "above-mentioned",
+  "swept away",
+  "flat plan",
+  // "subedit"
 ]// require("./words.json");
-//const words = require("./words.json");
+// const words = require("./words.json");
 const dictionary = {};
 
 (async () => {
@@ -45,6 +52,6 @@ const dictionary = {};
   }
 
   console.log("Saving to file...");
-  fs.writeFileSync("dictionary_temp.json", JSON.stringify(dictionary));
+  fs.writeFileSync("dictionary_temp2.json", JSON.stringify(dictionary));
   console.log("Done.");
 })();
