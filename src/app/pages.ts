@@ -30,7 +30,7 @@ const sections: Section[] = [
   { name: 'Appendix 3', start: 303, end: 304 },
   { name: 'Appendix 4', start: 305, end: 320 },
   // // { name: 'Appendix 5', start: 256, end: 257 },
-  // { name: 'Acknowledgements', start: 334},
+  { name: 'Acknowledgements', start: 321,end:321},
 ];
 
 const pages: Page[] = [];
