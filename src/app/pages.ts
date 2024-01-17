@@ -2,7 +2,7 @@ import { Page, Section } from './types';
 
 const sections: Section[] = [
   { name: 'Cover', start: 1 },
-  { name: 'Acknowledgements', start: 2 },
+  { name: '', start: 2 },
   { name: 'Best Experience for Mobile Devices', start: 3 },
   // { name: 'Authors', start: 3 },
   { name: 'Dedication', start: 4 },
