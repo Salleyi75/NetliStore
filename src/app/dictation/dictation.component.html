@@ -4,7 +4,7 @@
   <button color="primary" mat-raised-button (click)="isShowingText = !isShowingText">
       {{isShowingText ? 'Hide Text':'Show Text'}}
   </button>
-  <p class="text-lg" *ngIf="isShowingText" style="white-space: normal;">
-      {{text}}
+  <p class="text-lg" *ngIf="isShowingText" style="white-space: normal; white-space: pre-line;" [innerHTML]="text">
+      <!-- {{text}} -->
   </p>
 </div>
